@@ -380,12 +380,6 @@ public class SpaceInvadersGameFunction implements ActionListener{
 		}
 
 	}
-	public void list() {
-
-		for(int i = 0; i<scoreBoard.size();i++) {
-
-		}
-	}
 
 	class all{
 		String name;

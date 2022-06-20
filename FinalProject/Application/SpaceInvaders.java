@@ -59,7 +59,7 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
 	boolean running = false; 
 	boolean answer = true;
 
-	ImageIcon rules, covid19, play, bg, spaceInvader, paused, player, pausePlay, start, bullet, invaderBullet, howToPlay, title,scoreIcon,controller,newRules,exit,theRules ;      //ImageIcon to store images
+	ImageIcon rules, covid19, bg, spaceInvader, paused, player, pausePlay, bullet, invaderBullet, howToPlay, title,scoreIcon,controller,newRules,exit,theRules ;      //ImageIcon to store images
 	Rectangle invaderBulletBox, playerBox, playerBulletBox, spaceInvaderBox, covidBox; 
 	Timer timer; 
 
@@ -93,19 +93,19 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
 		listInvaderY.add(350);
 		listInvaderY.add(450);
 
-		title = new ImageIcon ("Images//title.png"); 
-		covid19 = new ImageIcon("Images//covid19.png");
+		title = new ImageIcon ("Images//title.png"); // https://www.subpng.com/free-png/space-invaders.html
+		covid19 = new ImageIcon("Images//covid19.png"); // https://www.freepik.com/premium-vector/pixel-art-corona-virus-covid-19-epidemic-infection_11812745.htm
 		rules = new ImageIcon("Images//rules.png");
-		bg = new ImageIcon("Images//bg2.png");
-		spaceInvader = new ImageIcon("Images//ant.png");
+		bg = new ImageIcon("Images//bg2.png"); // https://cutewallpaper.org/21/space-ship-background/view-page-21.html
+		spaceInvader = new ImageIcon("Images//ant.png"); // https://www.google.com/url?sa=i&url=https%3A%2F%2Fmyloview.com%2Fposter-clocks-and-watches-icons-set-pixel-art-alarm-electronic-clock-no-CBB975E&psig=AOvVaw1ezOvELtsg8urp_pjyp2sc&ust=1655775998734000&source=images&cd=vfe&ved=0CAkQjRxqFwoTCOCAtbb0uvgCFQAAAAAdAAAAABAE
 		timer = new Timer(30, this);
-		howToPlay = new ImageIcon ("Images//howToPlay.jpg"); ;
+		howToPlay = new ImageIcon ("Images//howToPlay.jpg"); 
 		player = new ImageIcon("Images//bee.png");
 		pausePlay = new ImageIcon("Images//pausePlay.png");
 		bullet = new ImageIcon("Images//bullet.png"); 
-		invaderBullet = new ImageIcon("Images//invaderBullet.png");
+		invaderBullet = new ImageIcon("Images//invaderBullet.png"); // https://flyclipart.com/rocket-laser-beam-pixel-art-maker-red-laser-png-229033
 		theRules = new ImageIcon("Images//theRules.png");
-		scoreIcon = new ImageIcon("Images//scoreImageIcon.png");
+		scoreIcon = new ImageIcon("Images//scoreImageIcon.png"); // https://www.freeiconspng.com/images/score-icon
 		controller = new ImageIcon("Images//controllerIcon.png");
 		newRules = new ImageIcon("Images//rule.png");
 		exit = new ImageIcon("Images//theExitImageIcon.png");
@@ -150,7 +150,6 @@ public class SpaceInvaders extends JPanel implements ActionListener, KeyListener
 		b5.setBackground(new Color(186, 85, 211));
 
 		timer.start(); 
-
 	}
 
 	public void paintComponent(Graphics g){ // https://docs.oracle.com/javase/7/docs/api/javax/swing/JComponent.html#paintComponent(java.awt.Graphics)
